@@ -1,5 +1,7 @@
-const reverse = require('./challenge');
+function reverse(value) {  
+  return Array.from(
+    String(value || '')
+  ).reverse().join('')
+}
 
-test('Reverse', () => {
-  expect(reverse('tina')).toBe('anit');
-});
+module.exports = reverse;
